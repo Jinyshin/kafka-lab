@@ -29,6 +29,8 @@ public class ClickLog {
     @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'") // ISO-8601 UTC 형식
     private LocalDateTime timestamp;
 
+    public ClickLog() {}
+
     public ClickLog(String userId, String page, String element, LocalDateTime timestamp) {
         this.userId = userId;
         this.page = page;
